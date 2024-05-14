@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(0deg, #40919c 20%, #000000 80%);
+}
+
+p {
+    color: rgb(93, 201, 201);
+}
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar .nav-link.active {
+    color: rgb(127, 229, 255);
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: rgb(77, 102, 102);
+}
+
+.sidebar {
+    color: rgb(93, 201, 201);
+    background: linear-gradient(80deg, #2e2e2e 2%, #0c0c0c 30%);
+}
+
+.sidebar>a>h1 {
+    font-size: 1.3em;
+    color: #afeff3;
+    text-decoration: none;
+    background: linear-gradient(80deg, #2d366e 5%, #000000 90%);
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #2e2e2e;
+    color: #afeff3;
+}
+
+.card a {
+    text-decoration: none;
+    color: #afeff3;
+}
+
+.slide-text,
+.footer-text {
+    color: aqua;
+    margin: auto auto;
+}
+
+footer, .btn-outline-primary {
+    background-color: #2e2e2e;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    /* выравняет блочный текст по горизонтали */
+    align-items: center;
+    /* выровняет блочный текст по вертекали */
+}
+
+.call-anim {
+    animation: call 2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes call {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
